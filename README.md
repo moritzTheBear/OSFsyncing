@@ -8,7 +8,7 @@ This project includes a Bash script that simplifies the use of the `osfclient` t
    Place the file `initializeOSF.command` in any folder of your choice. This folder will later contain a designated upload folder for all files to be uploaded.
 
 3. **Run the Initialization Script:**
-   Double-click the `initializeOSF.command` file. A terminal window will open, prompting you to enter your OSF username and project ID. If your comoputer doesn't allow you to open the file, open a Terminal in the folder you placed the file in, execute the following command: `bash initalizeOSF.command`.
+   Double-click the `initializeOSF.command` file. A terminal window will open, prompting you to enter your OSF username and project ID. If your comoputer doesn't allow you to open the file, open a Terminal in the folder you placed the file in, execute the following command: `bash initalizeOSF.command`
 
 4. **Enter Your Credentials:**
    - Your username is your email address.
