@@ -30,9 +30,8 @@ osf -u $nutzername ls | while read -r line; do
     osf -u $nutzername remove "$line"
 done
 osf -u $nutzername upload -r hierUploaden/. Files
-'@ > updaten_mac.command
+'@ > updaten_mac.sh
 
-chmod +x updaten_mac.command
 
 # Create a script to download the OSF client
 @'
@@ -42,7 +41,7 @@ pip install osfclient
 @'
 #!/bin/bash
 pip install osfclient
-'@ > osfclientInstall_mac.command
+'@ > osfclientInstall_mac.sh
 
 
 New-Item -ItemType Directory -Force -Path hierUploaden
