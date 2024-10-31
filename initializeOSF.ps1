@@ -16,13 +16,13 @@ for /f "tokens=*" %%i in ('osf -u %nutzername% ls') do (
     osf -u %nutzername% remove "%%i"
 )
 osf -u %nutzername% upload -r hierUploaden/. Files
-'@ > updaten.cmd
+'@ > updaten.ps1
 
 # Create a script to download the OSF client
 @'
 @echo off
 pip install osfclient
-'@ > osfclientInstall.cmd
+'@ > osfclientInstall.ps1
 
 New-Item -ItemType Directory -Force -Path hierUploaden
 Remove-Item -Force -LiteralPath $MyInvocation.MyCommand.Definition
