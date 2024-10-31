@@ -16,7 +16,7 @@ for /f "tokens=*" %%i in ('osf -u %nutzername% ls') do (
     osf -u %nutzername% remove "%%i"
 )
 osf -u %nutzername% upload -r hierUploaden/. Files
-'@ > updaten_win.ps1
+'@ > updaten_win.bat
 # Create a script to upload files to OSF for macOS
 @'
 #!/bin/bash
@@ -37,7 +37,7 @@ chmod +x updaten_mac.command
 @'
 @echo off
 pip install osfclient
-'@ > osfclientInstall_win.ps1
+'@ > osfclientInstall_win.bat
 # Create a script to download the OSF client for macOS
 @'
 #!/bin/bash
