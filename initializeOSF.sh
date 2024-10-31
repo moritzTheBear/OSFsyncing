@@ -2,7 +2,7 @@ pip install osfclient
 cd "$(dirname "$0")"
 osf init
 # Create a script to upload files to OSF
-cat << 'EOF' > updaten_mac.command
+cat << 'EOF' > updaten_mac.sh
 #!/bin/bash
 echo "Enter your osf-username:"
 read nutzername
@@ -33,7 +33,7 @@ foreach ($item in (osf -u $nutzername ls)) {
 osf -u $nutzername upload -r "hierUploaden/." "Files"
 EOF
 # Create a script to download the OSF client
-cat << 'EOF' > osfclientInstall_mac.command
+cat << 'EOF' > osfclientInstall_mac.sh
 #!/bin/bash
 pip install osfclient
 EOF
