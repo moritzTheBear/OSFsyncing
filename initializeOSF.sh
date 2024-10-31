@@ -1,6 +1,7 @@
 pip install osfclient
 cd "$(dirname "$0")"
 osf init
+# Create a script to upload files to OSF
 cat << 'EOF' > updaten.command
 #!/bin/bash
 echo "Enter your osf-username:"
@@ -15,6 +16,13 @@ for item in $(osf -u $nutzername ls); do
 done
 osf -u $nutzername upload -r hierUploaden/. Files
 EOF
+# Create a script to download the OSF client
+cat << 'EOF' > osfclientInstall.command
+#!/bin/bash
+pip install osfclient
+EOF
 
 chmod +x updaten.command
 mkdir hierUploaden
+# Delete the script itself
+rm -- "$0"
