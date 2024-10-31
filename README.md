@@ -3,12 +3,21 @@
 This project includes a Bash script that simplifies the use of the `osfclient` tool for synchronizing local files and those on the Open Science Framework (OSF).
 
 ## Steps to Follow:
+1. **Make sure, Python is installed, including pip**
 
 1. **Create the Initialization File:**
    Place the file `initializeOSF.command` in any folder of your choice. This folder will later contain a designated upload folder for all files to be uploaded.
 
 3. **Run the Initialization Script:**
    Double-click the `initializeOSF.command` file. A terminal window will open, prompting you to enter your OSF username and project ID. If your comoputer doesn't allow you to open the file, open a Terminal in the folder you placed the file in, execute the following command: `bash initalizeOSF.command`
+
+   **Windows:**
+   You need to be inside the folder to right click and then open in Terminal.
+   ![windows](image.png)
+
+   **Mac:**
+   You need to be outside the folder, then right click on the folder and open in Terminal.
+   ![mac](image-1.png)
 
 4. **Enter Your Credentials:**
    - Your username is your email address.
