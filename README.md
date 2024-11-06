@@ -12,7 +12,7 @@ This project includes a Bash script that simplifies the use of the `osfclient` t
    Double-click the `initializeOSF.command` file. A terminal window will open, prompting you to enter your OSF username and project ID. If your comoputer doesn't allow you to open the file, open a Terminal in the folder you placed the file in, execute the following command: `bash initalizeOSF.command`
 
    **Windows:**
-   You need to be inside the folder to right click and then open in Terminal. Then run the command `powershell -executonpolicy bypass -File .\initializeOSF.ps1`
+   You need to be inside the folder to right click and then open in Terminal. Then run the command `powershell -executionpolicy bypass -File .\initializeOSF.ps1`
    ![windows](image.png)
 
    **Mac:**
